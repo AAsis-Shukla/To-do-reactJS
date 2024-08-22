@@ -21,15 +21,18 @@
 }
 @media only screen and (max-width: 800px) {
   .plxg{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .box1,.box2{
+  .box1{
     width: 90%;
     height: auto;
   }
   .box2{
+    width: 90%;
+    margin-left: 4px;
     justify-content: space-evenly;
   }
  
