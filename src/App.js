@@ -141,7 +141,7 @@ class App extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={{ span: 11, offset: 1}}>
+                    <Col md={{ span: 11, offset: 1}} sm={{span: 12, offset:0}}>
                         <ListGroup>
                             {/* Map over and print items */}
                             {this.state.list.map((item, index) => {
