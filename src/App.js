@@ -157,26 +157,26 @@ class App extends Component {
                                         >
                                             <span className="box1">{item.value}</span>
                                             <span className="box2" >
-                                                <Button
+                                                <Button sm="m-0"
                                                     style={{ marginRight: "10px" }}
                                                     variant="light"
                                                     onClick={() => this.deleteItem(item.id)}>
                                                     Delete
                                                 </Button>
-                                                <Button
+                                                <Button sm="m-0"
                                                     style={{ marginRight: "10px" }}
                                                     variant="light"
                                                     onClick={() => this.editItem(index)}>
                                                     Edit
                                                 </Button>
-                                                <Form.Control
+                                                <Form.Control sm="m-0"
                                                     type="date"
                                                     style={{ marginRight: "10px", display: "inline-block", width: "auto" }}
                                                     value={item.dueDate || ''}
                                                     placeholder="Due Date"
                                                     onChange={(e) => this.handleDueDateChange(index, e.target.value)}
                                                 />
-                                                <Form.Select
+                                                <Form.Select sm="m-0"
                                                     style={{ display: "inline-block", width: "auto" }}
                                                     value={item.status}
                                                     onChange={(e) => this.setStatus(index, e.target.value)}>
