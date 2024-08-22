@@ -9,7 +9,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import ListGroup from "react-bootstrap/ListGroup";
 import Form from "react-bootstrap/Form";
-
+import "./App.css"
 class App extends Component {
     constructor(props) {
         super(props);
@@ -149,14 +149,14 @@ class App extends Component {
                                     <div key={index}>
                                         <ListGroup.Item
                                             variant="dark"
-                                            action
+                                            className="plxg"
                                             style={{
                                                 display: "flex",
-                                                justifyContent: "space-between"
-                                            }}
+                                                justifyContent: "space-between",
+                                            }} 
                                         >
-                                            {item.value}
-                                            <span>
+                                            <span className="box1">{item.value}</span>
+                                            <span className="box2" >
                                                 <Button
                                                     style={{ marginRight: "10px" }}
                                                     variant="light"
