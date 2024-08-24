@@ -10,6 +10,7 @@ import FormControl from "react-bootstrap/FormControl";
 import ListGroup from "react-bootstrap/ListGroup";
 import Form from "react-bootstrap/Form";
 import "./App.css"
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -44,6 +45,8 @@ class App extends Component {
             };
 
             // Update list
+            localStorage.setItem(userInput['id'],[JSON.stringify({'value':userInput['value'],'dueDate':userInput['dueDate'],'status':userInput['dueDate']})])
+            
             const list = [...this.state.list];
             list.push(userInput);
 
@@ -112,6 +115,7 @@ class App extends Component {
                     }}
                 >
                     TODO LIST
+                    
                 </Row>
 
                 <hr />
@@ -155,7 +159,7 @@ class App extends Component {
                                                 justifyContent: "space-between",
                                             }} 
                                         >
-                                            <span className="box1">{item.value}</span>
+                                            <span className="box1">{JSON.parse(localStorage.getItem(item.id))['value']}</span>
                                             <span className="box2" >
                                                 <Button sm="m-0"
                                                     style={{ marginRight: "10px" }}
